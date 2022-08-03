@@ -1,0 +1,133 @@
+<% layout('layouts/boilerplate')%>
+<div class="container">
+    <!-- about me -->
+    <div class="d-flex mb-3 justify-content-center align-items-center">
+        <img class="image-fluid p-2" style="width: 80%;max-width: 200px;" alt="profile photo" src="https://res.cloudinary.com/sherry-camp/image/upload/v1659542899/WechatIMG8_fu3lqv.jpg">
+        <div class="ml-5 p-1 w-50">
+            <h5>About Me:</h5>
+            I'am a graduate student majored in computer science in New York Univeristy. Before that, I majored in Information Management and Information Systems in Tianjin Univeristy. 
+            My interests are in Full-stack Engineering and I love to create beautiful and performant products with delightful user experiences and robust backend services.
+        </div>
+    </div>
+    <div class="card" >
+        <h5 class="card-header">Education:</h5>
+        <div class="card-body">
+          <p class="card-text">
+            <h6 class="card-title h5">New York Univeristy</h6>
+            <div class="row">
+                <div class="col-md h6">
+                    M.S. in Computer Science
+                </div>
+                <div class="col-md" style="text-align: end;">
+                    New York, NY,US
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-md">
+                    <span class="bolded">Cumulative GPA</span>: 3.85/4.0
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-md">
+                    <span class="bolded">Related Course</span>: Operating Systems, Fundamental Algorithms, Programming Language, DevOps and Agile, Big Data Application, Artificial Intelligence, Applied Cryptography.
+                </div>
+            </div>
+            <h6 class="card-title mt-3 h5">Tianjin Univeristy</h6>
+            <div class="row">
+                <div class="col-md">
+                    B.A.Sc in Information Management and Information Systems
+                </div>
+                <div class="col-md" style="text-align: end;">
+                    Tianjin, China
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-md">
+                    <span class="bolded">Cumulative GPA</span>: 3.56/4.0
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-md">
+                    <span class="bolded">Related Course</span>: Analysis and Design of Information Systems, Operation and Maintenace Management of Information Systems, Computer Networking, OOP Design, Data Structure, Database Systems, Data Warehourse & Data mining. 
+                </div>
+            </div>
+          </p>
+        </div>
+      </div>
+    <!-- project 1 -->
+    <div class="card mb-3">
+        <h5 class="card-header"><a href="https://campweb22.herokuapp.com/">Web Application for Campgrounds</a></h5>
+        <div class="card-body">
+          <h6 class="card-title mb-3">Built a Full-stack Campground Web for traverlers to review and create campgrounds.
+          </h6>
+          <p class="card-text">
+            <pr style="font-size:10pt;">
+                The project code can be accessed from this link: <a href="https://github.com/ShereenLiao/CampWeb.git"> https://github.com/ShereenLiao/CampWeb.git</a>
+                </pr>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Designed dynamic Front-end UI pages with <span class="bolded">HTML/CSS/JS</span> and <span class="bolded">Bootstrap 5</span> to show campgrounds and reviews.</li>
+                <li class="list-group-item">Implemented RESTful API with <span class="bolded">Node.js/Express</span> and <span class="bolded">MangoDB</span> to handle HTTP requests and CRUD operations.</li>
+                <li class="list-group-item">Set up authorization control and user authentication using <span class="bolded">Passport.js</span> to improve security and verify requests.</li>
+                <li class="list-group-item">Applied <span class="bolded">Mapbox</span> to dynamically display filtered campgrounds on an interactive clustering map with markers and popups.</li>
+                <li class="list-group-item">Deployed databases on to <span class="bolded">MongoDB Cloud</span> and delivered images to <span class="bolded">Cloudinarv</span> to ensure APP’s stability and persistency.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <!-- project 2 -->
+    <div class="card mb-3">
+        <h5 class="card-header"> <a href="http://159.122.178.141:31002/">Customer Microservices for a E-commerce Website</a> </h5>
+        <div class="card-body">
+          <h6 class="card-title">Developed the back end for customer services that handles basic customers information on an E-Commerce web</h6>
+          <p class="card-text">
+            <pr style="font-size:10pt;">
+                The project code can be accessed from this link: <a href="https://github.com/nyu-2022summer-devops-customers/customers.git"> https://github.com/nyu-2022summer-devops-customers/customers.git</a>
+                </pr>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Coordinated with an self-managing Agile team using <span class="bolded">Github</span>. Built and maintained Kanban board on <span class="bolded">Zenhub</span> for project tracking.</li>
+                <li class="list-group-item">Adopted <span class="bolded">test driven development(TDD)</span> techniques to develop the backend for RESTful services using <span class="bolded">Python Flask</span> and <span class="bolded">PostgreSQL</span>.</li>
+                <li class="list-group-item">Implemented a UI with Automated
+    <span class="bolded">behavior-driven development(BDD)</span> test suite that runs integration tests using
+    Selenium.</li>
+                <li class="list-group-item">Built repeatable development environments using <span class="bolded">Docker</span>. Deployed the application to a <span class="bolded">Kubernetes</span> cluster on IBM Cloud with an auto-testing CI/ CD <span class="bolded">DevOps Pipeline</span> and maintained 96% code coverage.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <!-- project 3 -->
+    <div class="card mb-3">
+        <h5 class="card-header"> Operating System Lab</h5>
+        <div class="card-body">
+          <h6 class="card-title">Developed the back end for an eCommerce web site as a collection RESTful services for a client.</h6>
+
+          <p class="card-text">
+            <pr style="font-size:10pt;">
+                The project code can be accessed from this link: <a href="https://github.com/ShereenLiao/OS_Lab.git">https://github.com/ShereenLiao/OS_Lab.git </a>
+            </pr>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Implemented an interactive <span class="bolded">Linux</span> Shell to handle built-in commands, executable commands, signals, and I/O redirection.</li>
+                <li class="list-group-item">Developed a <span class="bolded">Multi-Thread</span> data compression tool using a thread pool, increasing efficiency by 50%.</li>
+                <li class="list-group-item">Built a FAT32 file recovery tool to list the root directory, detect ambiguous files, and recover files with SHA-1 Hash.</li>
+            </ul>
+        </p>
+        </div>
+    </div>
+    <!-- project 4 -->
+    <div class="card mb-3">
+        <h5 class="card-header">IMDB Movie Analytics and Movie Recommendation System</h5>
+        <div class="card-body">
+          <h6 class="card-title">Constructed a movie recommendation system using Hadoop framework to recommend movies to users in Java.</h6>
+
+          <p class="card-text">
+            <pr style="font-size:10pt;">
+                The project code can be accessed from this link: <a href="https://github.com/ShereenLiao/Movie_Recommend_System.git">https://github.com/ShereenLiao/Movie_Recommend_System.git </a>
+            </pr>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Used <span class="bolded">Hive</span> to profile, clean, and analyze data from IMDB database (9GB). Visualized analytic results to uncover hidden insights about movie markets in <span class="bolded">Tableau</span>.</li>
+                <li class="list-group-item">Based on <span class="bolded">Hadoop</span> to implemented an item-based collaborative filtering algorithm to get the rating and co-occurrence matrix.</li>
+                <li class="list-group-item">Built a <span class="bolded">MapReduce</span> pipeline to generate the score matrix by multiplying two matrices and recommended movies according to aggregated scores.</li>
+            </ul>
+        </p>
+        </div>
+    </div>
+</div>
