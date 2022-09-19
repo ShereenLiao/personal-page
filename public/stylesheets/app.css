@@ -1,3 +1,10 @@
+#project-list .card{
+    border: 0ch;
+}
+#project-list .card-header{
+    background-color: #fff;
+}    
+
 .bolded {
     font-weight: bold;
 }

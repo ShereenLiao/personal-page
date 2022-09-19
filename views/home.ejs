@@ -1,21 +1,23 @@
 <% layout('layouts/boilerplate')%>
     <div class="container">
         <!-- about me -->
-        <div class="d-flex mb-3 justify-content-center align-items-center">
-                <img class="image-fluid p-2" style="width: 80%;max-width: 350px;"
+        <div class="flex-row justify-content-center align-items-center">
+                <img class="col-md-4" style="width:80%;max-width: 350px;"
                         alt="profile photo"
                         src="https://res.cloudinary.com/sherry-camp/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1659572092/WechatIMG9_fh57vx.jpg">
-                <div class="ml-5 p-1 w-50">
-                    <h5>About Me:</h5>
-                    I'am a graduate student majored in computer science in New York Univeristy. Before that, I majored
-                    in Information Management and Information Systems in Tianjin Univeristy.
-                    My interests are in Full-stack Engineering and I love to create beautiful and performant products
-                    with delightful user experiences and robust backend services.
-                    <div class="mt-3">
-                        <h6>Email: <a href="mailto:sherrylxx98@gmail.com?subject=free chocolate">sherrylxx98@gmail.com</a></h6>
-                        <h6>LinkedIn: <a href="https://www.linkedin.com/in/xiaoxuan-liao-80932922b/">Xiaoxuan Liao</a></h6>
-                        <h6>Github: <a href="https://github.com/ShereenLiao/">ShereenLiao</a></h6>
-                    </div>
+                <div class="col-md-4 ml-auto flex-row justify-content-center">
+                    <div>
+                        <h5>About Me:</h5>
+                        I'am a graduate student majored in computer science in New York Univeristy. Before that, I majored
+                        in Information Management and Information Systems in Tianjin Univeristy.
+                        My interests are in Full-stack Engineering and I love to create beautiful and performant products
+                        with delightful user experiences and robust backend services.
+                        <div class="mt-3">
+                            <h6>Email: <a href="mailto:sherrylxx98@gmail.com?subject=free chocolate">sherrylxx98@gmail.com</a></h6>
+                            <h6>LinkedIn: <a href="https://www.linkedin.com/in/xiaoxuan-liao-80932922b/">Xiaoxuan Liao</a></h6>
+                            <h6>Github: <a href="https://github.com/ShereenLiao/">ShereenLiao</a></h6>
+                        </div>
+                </div>
                 </div>
    
         </div>
@@ -89,5 +91,120 @@
                 </div>
             </div>
         </div>
-        <%-include('partials/projects')%> 
+        <div class="card" >
+            <h5 class="card-header">Projects</h5>
+            <div class="card-body" id="project-list">
+                <div class="card">
+                    <h5 class="card-header"> <a href="http://159.122.178.141:31001/">DevOps & Agile Microservices Development</a>
+                    </h5>
+                    <div class="card-body">
+                        <h6 class="card-title">Developed the back end for customer services that handles basic customers information on
+                            an E-Commerce web</h6>
+                        <h7><span class="bolded">Teach Stack:</span>Python Flask & PostgreSQL & Behave</h7> <span style="font-size:10pt;"> The project code can be accessed from this link: <a
+                            href="https://github.com/nyu-2022summer-devops-customers/customers.git">
+                            https://github.com/nyu-2022summer-devops-customers/customers.git</a></span>
+                        <p class="card-text">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Led an Agile team to plan, design and build a cloud-based microservice of an E-commerce platform using Git and Zenhub.</li>
+                            <li class="list-group-item">Implemented unit tests to develop RESTful APIs and integration tests to guide the build of UIs, maintaining 96\% code coverage.</li>
+                            <li class="list-group-item">Refactored code using Flask-RESTX and
+                                Swagger to describe APIs endpoint and exposed its documentation properly.</li>
+                            <li class="list-group-item">Built environment in Docker and deployed to Kubernetes Cluster in IBM Cloud with an auto-testing 4-stages CI/CD pipeline to atomically merges code into production, saving 30 \% time in deployment.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <!-- project 2 -->
+                <div class="card">
+                    <h5 class="card-header">Sync Movie Watch Party Platform</h5>
+                    <div class="card-body">
+                        <h6 class="card-title mb-3">Built a Full-stack web application for users to explore, review, and watch movies together across time zones and locations.
+                        </h6>
+                        <h7><span class="bolded">Teach Stack:</span> MongoDB & Express & Node.js & Socket.io</h7>
+                        <p class="card-text">
+                            <!-- <pr style="font-size:10pt;">
+                                The project code can be accessed from this link: <a
+                                    href="https://github.com/ShereenLiao/campgrounds-web.git">
+                                    https://github.com/ShereenLiao/campgrounds-web.git</a>
+                            </pr> -->
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Constructed an MVC-based full-stack web application for users to explore, review, and watch movies together across time zones.</li>
+                            <li class="list-group-item">Built a RESTful back-end to handle HTTP requests, CRUD operations and queries  of users, rooms, reviews and movies; deployed the application to AWS to ensure APP's availability.</li>
+                            <li class="list-group-item">Established a bi-directional socket connection to keep users in the same room watch videos synchronously and automatically; set up chat channels to enable users to share thoughts and interactions alongside videos.</li>
+                            <li class="list-group-item">Displayed real-time active rooms on an interactive clustering map with popups to encourage user explore rooms by locations.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <!-- project 3 -->
+                <div class="card">
+                    <h5 class="card-header"> Operating System : A Unix Shell</h5>
+                    <div class="card-body">
+                        <h7><span class="bolded">Teach Stack: </span>Unix & C</h7>
+                        <!-- <h6 class="card-title">Developed the back end for an eCommerce web site as a collection RESTful services for a
+                            client.</h6> -->
+                        <p class="card-text">
+                            <!-- <pr style="font-size:10pt;">
+                                The project code can be accessed from this link: <a
+                                    href="https://github.com/ShereenLiao/os-labs.git">https://github.com/ShereenLiao/os-labs.git </a>
+                            </pr> -->
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Developed an interactive command-line program to execute build-in commands and multiple external programs.</li>
+                            <li class="list-group-item">Redirected standard input and output into files or through pipeline, supporting 3 file redirection symbols.</li>
+                            <li class="list-group-item">Conducted job control over external programs and handled signals to suspend and terminate processes, leaving no zombie process</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <!-- project 4 -->
+                <div class="card">
+                    <h5 class="card-header"> Operating System : Parallel RLE Data Compression Tool</h5>
+                    <div class="card-body">
+                        <h7><span class="bolded">Teach Stack: </span>Linux & C++</h7>
+                        <!-- <h6 class="card-title">Developed the back end for an eCommerce web site as a collection RESTful services for a
+                            client.</h6> -->
+                        <p class="card-text">
+                            <!-- <pr style="font-size:10pt;">
+                                The project code can be accessed from this link: <a
+                                    href="https://github.com/ShereenLiao/os-labs.git">https://github.com/ShereenLiao/os-labs.git </a>
+                            </pr> -->
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Constructed a Run-length encoding (RLE) data compress tool in sequential and parallel using POSIX threads</li>
+                            <li class="list-group-item">Implemented a thread pool to execute encoding tasks, using mutexes and condition variables, speeding up 12 times in 6 worker
+                                threads compared with sequential RLE</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <!-- project 4 -->
+                <div class="card">
+                    <h5 class="card-header">IMDB Movie Analytics and Movie Recommendation System</h5>
+                    <div class="card-body">
+                        <h6 class="card-title">Constructed a movie recommendation system using Hadoop framework to recommend movies to
+                            users in Java.</h6>
+                
+                        <p class="card-text">
+                            <pr style="font-size:10pt;">
+                                The project code can be accessed from this link: <a
+                                    href="https://github.com/ShereenLiao/movie-recommendation-system.git">https://github.com/ShereenLiao/movie-recommendation-system.git
+                                </a>
+                            </pr>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Used <span class="bolded">Hive</span> to profile, clean, and analyze data from
+                                IMDB database (9GB). Visualized analytic results to uncover hidden insights about movie markets in <span
+                                    class="bolded">Tableau</span>.</li>
+                            <li class="list-group-item">Based on <span class="bolded">Hadoop</span> to implemented an item-based
+                                collaborative filtering algorithm to get the rating and co-occurrence matrix.</li>
+                            <li class="list-group-item">Built a <span class="bolded">MapReduce</span> pipeline to generate the score
+                                matrix by multiplying two matrices and recommended movies according to aggregated scores.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
     </div>
